@@ -1,0 +1,370 @@
+{
+    "mongo_connection": {
+        "mongo_connection_id": "sis",
+        "mongo_database_name": "sip-prod"
+    },
+        
+    "db_connection_id": "postgres_connection",
+    
+    "postgres_connection_id": "sis-airflow",
+        
+    "mongo_connection_id": "sis",
+    "mongo_database_name": "sip-prod",
+    "mysql_connection_id": "noco_2",
+    "minio_connection_id": "aws_s3",
+        
+    "beneficios": {
+        "beneficios_af": [
+            "beneficios_af",
+            []
+        ]
+    },
+        
+    "intervenciones_poblacion": {
+        "Intervenciones_poblacion": [
+            "Intervenciones_poblacion",
+            []
+        ]
+    },
+    
+    "entidadjuridicas": {
+        "entidadjuridicas": [
+            "entidadesjuridicas",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+        
+    "usuarios": {
+        "usuarios": [
+            "usuarios",
+            [
+                "_id",
+                "cuil",
+                "area",
+                "nombre",
+                "apellido"
+            ]
+        ]
+    },
+    
+    "unidades": {
+        "unidades": [
+            "unidades",
+            []
+        ]
+    },
+
+
+    "avanceestados": {
+        "avanceestados": [
+            "avanceestados",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+
+    "metadatos": {
+        "metadatos": [
+            "metadatos",
+            [
+                "avance_id",
+                "tipometadato_id",
+                "detalle",
+                "fecha"
+            ]
+        ]
+    },
+    "solicitudmetadatos": {
+        "solicitudmetadatos": [
+            "solicitudmetadatos",
+            [
+                "solicitud_id",
+                "tipometadato_id",
+                "detalle",
+                "fecha"
+            ]
+        ]
+    },
+
+    "tipometadato": {
+        "tipometadato": [
+            "tipometadato",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+
+    "tipolugar": {
+        "tipolugar": [
+            "tipolugar",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+
+    "solicitante": {
+        "solicitantes": [
+            "solicitante",
+            [
+                "_id",
+                "caracter",
+                "caracterId",
+                "tipoIdentificacion",
+                "tipoIdentificacionId",
+                "identificacion",
+                "entidadJuridicaId",
+                "tipoSolicitante",
+                "mongo_updated_at",
+                "mongo_created_at"
+            ]
+        ]
+    },
+
+    "DA_AfectadaEdadGenero": {
+        "DA_AfectadaEdadGenero": [
+            "DA_AfectadaEdadGenero",
+            []
+        ]
+    },
+
+    "areas": {
+        "areas": [
+            "areas",
+            []
+        ]
+    },
+
+    "canal": {
+        "canal": [
+            "canal",
+            []
+        ]
+    },
+
+    "tipopeticions": {
+        "tipopeticions": [
+            "tipopeticions",
+            []
+        ]
+    },
+
+    
+    "generos": {
+        "generos": [
+            "generos",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+
+    "tipoidentificacion": {
+        "tipoidentificacions": [
+            "tipoidentificacion",
+            [
+                "_id",
+                "nombre"
+            ]
+        ]
+    },
+
+    "personasafectada": {
+        "personaafectadas": [
+            "afectada",
+            [
+                "_id",
+                "tipoIdentificacionId",
+                "identificacion",
+                "provincia",
+                "localidad",
+                "direccion",
+                "generoId",
+                "edad",
+                "nacionalidad",
+                "ocupacion",
+                "infoDemograficaId",
+                "nombre",
+                "apellido",
+                "mongo_updated_at",
+                "mongo_created_at"
+            ]
+        ]
+    },
+
+    "responsables": {
+        "personaresponsables": [
+            "responsable",
+            [
+                "_id",
+                "tipoIdentificacion",
+                "identificacion",
+                "enActividad",
+                "enServicio",
+                "agrupamiento_id",
+                "mongo_updated_at",
+                "mongo_created_at",
+                "nombre",
+                "apellido"
+            ]
+        ]
+    },
+
+    "solicitudes": {
+        "peticions": [
+            "solicitudes",
+            [
+                "_id",
+                "numero",
+                "caratula",
+                "fecha",
+                "hora",
+                "fechaIngreso",
+                "estado_id",
+                "fechaUltimoAvance",
+                "lugar",
+                "area_id",
+                "canal_id",
+                "urgencia",
+                "subtipo_id",
+                "lugar_detalle",
+                "tipolugar_id",
+                "afectadas_ids",
+                "responsables_ids",
+                "solicitante_id",
+                "usuario_id",
+                "mongo_updated_at",
+                "mongo_created_at"
+            ]
+        ]
+    },
+
+    "agrupamientos": {
+        "agrupamientos": [
+            "agrupamiento",
+            [
+                "_id",
+                "nombre",
+                "institucion_id"
+            ]
+        ]
+    },
+
+    "avances": {
+        "avances": [
+            "avances",
+            [
+                "_id",
+                "estado",
+                "fecha",
+                "usuario_id",
+                "solicitud_id",
+                "descripcion",
+                "cantidad_metadatos"
+            ]
+        ]
+    },
+
+    "tablas-parte-1": {
+        "areas": [
+            "areas",
+            [
+                "_id",
+                "nombre",
+                "parent"
+            ]
+        ],
+        "avanceestados": [
+            "avanceestados",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "canals": [
+            "canal",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "entidadjuridicas": [
+            "entidadesjuridicas",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "generos": [
+            "generos",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "institucions": [
+            "instituciones",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "lugars": [
+            "lugares",
+            [
+                "_id",
+                "nombre",
+                "tipo"
+            ]
+        ],
+        "tipoidentificacions": [
+            "tipoidentificacion",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "tipolugars": [
+            "tipolugar",
+            [
+                "_id",
+                "nombre"
+            ]
+        ],
+        "tipometadatos": [
+            "tipometadato",
+            [
+                "_id",
+                "nombre",
+                "tieneFecha"
+            ]
+        ],
+        "tipopeticions": [
+            "tipopeticions",
+            [
+                "_id",
+                "nombre",
+                "tipo"
+            ]
+        ],
+        "usuarios": [
+            "usuarios",
+            [
+                "_id",
+                "cuil",
+                "area",
+                "nombre",
+                "apellido"
+            ]
+        ]
+    }
+}
